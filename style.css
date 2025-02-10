@@ -12,8 +12,6 @@ body{
     font-family: "Jersey 10", serif;
     font-weight: 400;
     font-style: normal;
-
-    
 }
 
   
@@ -24,6 +22,7 @@ body{
 
 .background img{
     width: 100%;
+    opacity: 50%;
 }
 
 .background{
@@ -58,19 +57,19 @@ body{
 .msg{
     width: 30rem;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: start;
 }
 
 .container-arquivos{
     display: flex;
-    width: 75%;
+    width: 70%;
     justify-content: center;
     align-items: center;
 }
 
 .pixelart img{
-    width: 20rem;
+    width: 13rem;
 }
 
 .arquivos-main{
@@ -81,6 +80,8 @@ body{
     background-color: #020610;
     color: white;
 }
+
+
 
 .title-arquivo{
     font-size: 1.5rem;
@@ -95,6 +96,11 @@ body{
 
 .button-dowload{
     padding: 5rem;
+}
+
+.button-dowload img{
+    cursor: pointer;
+    width: 8rem;
 }
 
 .button-dowload img:hover{
