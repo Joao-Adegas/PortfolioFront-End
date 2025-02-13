@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contpt-brt="width=device-width, initial-scale=1.0">
+    <title>Fatorial</title>
+</head>
+<body>
+    <script>
+        function fatorial(numero) {
+            if (numero < 0) {
+                alert("Não é possível calcular o fatorial de um número negativo");
+                return;
+            }
+            if (numero === 0 || numero === 1) {
+                return 1;
+            } else {
+                return numero * fatorial(numero - 1);
+            }
+        }
+
+        const numero = parseInt(window.prompt("Digite um número para ver seu fatorial:"));
+        const resultado = fatorial(numero);
+        alert(`O fatorial de ${numero} é: ${resultado}`);
+        
+    </script>
+</body>
+</html>

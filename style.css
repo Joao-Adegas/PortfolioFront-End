@@ -12,6 +12,7 @@
     align-items: center;
     gap: 10px;
     height: 100vh;
+    width: 100%;
 }
 
 body{
@@ -153,6 +154,39 @@ cursor: pointer;
     transform: scale(1.1);
     cursor: pointer;
 }
+
+.gif {
+    width: 99vw; /* Ocupa toda a largura da viewport */
+    height: 200px; /* Altura da área de animação */
+    position: relative;
+    overflow: hidden;
+}
+
+.run_mario {
+    position: absolute;
+    right: 0;
+    transform: translateY(50%); /* Centraliza verticalmente */
+    animation: runMario 5s linear infinite;
+    width:100% ;
+}
+
+.run_mario  img{
+    width: 4%;
+}
+
+#mario {
+    height: 100px; /* Ajuste conforme necessário */
+}
+
+@keyframes runMario {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
 
 @media (max-width: 1055px) {
     .Title-global-header img{
