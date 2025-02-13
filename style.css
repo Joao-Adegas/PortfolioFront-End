@@ -74,6 +74,7 @@ body{
     width: 65%;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
 }
 
 .pixelart img{
@@ -157,7 +158,7 @@ cursor: pointer;
 
 .gif {
     width: 99vw; /* Ocupa toda a largura da viewport */
-    height: 200px; /* Altura da área de animação */
+    height: 113px; /* Altura da área de animação */
     position: relative;
     overflow: hidden;
 }
@@ -180,13 +181,24 @@ cursor: pointer;
 
 @keyframes runMario {
     0% {
-        left: -100%;
+        left: -30%;
     }
     100% {
         left: 100%;
     }
 }
 
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-weight: 100;
+}
+
+footer p {
+    font-size: 2rem;
+}
 
 @media (max-width: 1055px) {
     .Title-global-header img{
