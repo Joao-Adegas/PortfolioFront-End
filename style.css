@@ -71,7 +71,7 @@ body{
 
 .container-arquivos{
     display: flex;
-    width: 65%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 3rem 0;
@@ -89,7 +89,6 @@ body{
     background-color: #001531;
     color: white;
     font-size: 2rem;
-    /* width: 85%; */
 }
 
 
@@ -99,19 +98,27 @@ body{
 }
 
 
+
 .about_arquivo{
     padding: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    /*! gap: 32.4rem; */
     text-decoration: none;
+    /* height: 300px;*/
+    width: 55px; 
+    min-width: 100%;
+    /*! overflow: hidden; */
 }
+
+
 
 .about_arquivo a{
     text-decoration: none;
     color: white;
     cursor: pointer;
+    width: 100%;
 }
 
 .about_arquivo a:hover h2{
@@ -119,12 +126,22 @@ body{
     cursor: pointer;
 }
 
+.rolador {
+    display: flex;
+    /*! gap: 3.3rem; */
+   object-fit: cover;
+   transition: transform 0.5s ease-in-out;
+   /*! scroll-behavior: smooth; */
+   transform: translateX(-110%);
+    /*! padding: 0 5px; */
+}
+
 .about_arquivo a:hover p{
 cursor: pointer;
 }
 
 .button-dowload{
-    padding: 5rem;
+    padding: 4rem;
 }
 
 .button-dowload img{
@@ -137,20 +154,26 @@ cursor: pointer;
     transform: scale(1.1);
 }
 
+.exercicio{
+    min-width: 100%; /* Cada item ocupa 100% da largura do container */
+    transition: transform 0.5s ease;
+}
 
 .carousel{
-    gap: 0rem;
+    column-gap: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    /*! padding: 1rem; */
+    width: auto;
+    overflow: hidden;
 }
 
-.carousel img{
+.carousel_button img{
     width: 8rem;
 }
 
-.carousel img:hover{
+.carousel_button img:hover{
     transition: 0.2s;
     transform: scale(1.1);
     cursor: pointer;
@@ -194,6 +217,7 @@ footer{
     justify-content: center;
     color: white;
     font-weight: 100;
+    background-color: #020221;
 }
 
 footer p {
