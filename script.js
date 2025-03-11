@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextButton = document.querySelector('.left_button_carousel');
     const rolador = document.querySelector('.rolador');
     const slides = document.querySelectorAll('.about_arquivo');
+    const imgSelected = document.querySelector('img_selected');
   
     let currentIndex = 0;
   
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     prevButton.addEventListener('click', () => {
         currentIndex--;
         showSlide(currentIndex);
+
     });
   
     nextButton.addEventListener('click', () => {

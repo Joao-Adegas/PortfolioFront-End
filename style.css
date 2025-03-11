@@ -100,14 +100,14 @@ body{
 
 
 .about_arquivo{
-    padding: 0rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /*! gap: 32.4rem; */
     text-decoration: none;
     /* height: 300px;*/
-    width: 55px; 
+    width: 55px;
     min-width: 100%;
     /*! overflow: hidden; */
 }
