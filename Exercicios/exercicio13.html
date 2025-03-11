@@ -82,10 +82,25 @@ button:active {
           <button>.</button>
           <button>=</button>
           <button>+</button>
+          <button class="clear">Clear</button>
         </div>
     </div>  
     <a href="../index.html">Voltar a pagina inicial</a>
     <script>
+        // Selecionando elementos
+const display = document.querySelector('.display');
+const buttons = document.querySelectorAll('.botoes button');
+
+// Adicionando eventos aos botões
+    buttons.forEach(btn => 
+    btn.addEventListener('click', () => 
+        btn.classList.contains('clear') // Verifica se o botão é o "Clear"
+        ? display.value = ''          // Limpa o display
+        : btn.textContent === '='
+        ? display.value = eval(display.value) // Calcula o resultado
+        : display.value += btn.textContent    // Adiciona o valor ao display
+    )
+    );
 
     </script>
 </body>
