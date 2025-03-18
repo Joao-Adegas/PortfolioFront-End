@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="../index.html">Voltar a pagina inicial</a>
+    <script>
+
+        
+
+        const escolha = ["pedra","papel","tesoura"]
+        let escolhaMaquina =  Math.floor(Math.random() * escolha.length);
+        let escolhaDaMaqina = escolha[escolhaMaquina]
+        const escolhaUsuario = window.prompt("Digite sua escolha:")
+
+
+        console.log(" escolha maquina: "+escolhaDaMaqina)
+
+       if(escolhaUsuario == "pedra" && escolhaDaMaqina == "tesoura" ||
+       escolhaUsuario == "tesoura" && escolhaDaMaqina == "papel" ||
+       escolhaUsuario == "papel" && escolhaDaMaqina == "pedra" ){
+        alert("VOCE VENCEU a maquina escolheu " + escolhaDaMaqina)
+       }
+       else if(escolhaDaMaqina == escolhaUsuario){
+            alert("EMPATE voce e a maquina escolheram " + escolhaUsuario + " " + escolhaDaMaqina )
+       }
+       else{
+        alert("voce perdeu a maquina escolheu " + escolhaDaMaqina )
+       }
+    </script>
+</body>
+</html>

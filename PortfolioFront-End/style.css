@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    cursor: url('./imagens/cursor.png'), auto;  
+}
+
+.container-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    width: 100%;
+}
+
+body{
+    background-color: #020202;
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do "polegar" da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.background img{
+    width: 100%;
+    opacity: 50%;
+}
+
+.background{
+    width: auto;
+}
+
+.yoshi{
+    position: relative;
+    
+}
+
+.Title-global-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 14vh;
+}
+
+.Title-global-header img{
+    width: 30rem;
+}
+
+.global-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 10rem;
+}
+
+.msg{
+    width: 30rem;
+    color: white;
+    font-size: 3.2rem;
+    text-align: start;
+}
+
+.container-arquivos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.pixelart img{
+    width: 13rem;
+}
+
+.arquivos-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001531;
+    color: white;
+    font-size: 2rem;
+}
+
+
+
+.title-arquivo{
+    font-size: 2.5rem;
+}
+
+
+
+.about_arquivo{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*! gap: 32.4rem; */
+    text-decoration: none;
+    /* height: 300px;*/
+    width: 55px;
+    min-width: 100%;
+    /*! overflow: hidden; */
+}
+
+
+
+.about_arquivo a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.about_arquivo a:hover h2{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.rolador {
+    display: flex;
+    /*! gap: 3.3rem; */
+   object-fit: cover;
+   transition: transform 0.5s ease-in-out;
+   /*! scroll-behavior: smooth; */
+   transform: translateX(-110%);
+    /*! padding: 0 5px; */
+}
+
+.about_arquivo a:hover p{
+cursor: pointer;
+}
+
+.button-dowload{
+    padding: 4rem;
+}
+
+.button-dowload img{
+    cursor: pointer;
+    width: 8rem;
+}
+
+.button-dowload img:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.exercicio{
+    min-width: 100%; /* Cada item ocupa 100% da largura do container */
+    transition: transform 0.5s ease;
+}
+
+.carousel{
+    column-gap: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*! padding: 1rem; */
+    width: auto;
+    overflow: hidden;
+}
+
+.carousel_button img{
+    width: 8rem;
+}
+
+.carousel_button img:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.gif {
+    width: 99vw; /* Ocupa toda a largura da viewport */
+    height: 113px; /* Altura da área de animação */
+    position: relative;
+    overflow: hidden;
+}
+
+.run_mario {
+    position: absolute;
+    right: 0;
+    transform: translateY(50%); /* Centraliza verticalmente */
+    animation: runMario 5s linear infinite;
+    width:100% ;
+}
+
+.run_mario  img{
+    width: 4%;
+}
+
+#mario {
+    height: 100px; /* Ajuste conforme necessário */
+}
+
+@keyframes runMario {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-weight: 100;
+    background-color: #020221;
+}
+
+footer p {
+    font-size: 2rem;
+}
+
+@media (max-width: 1055px) {
+    .Title-global-header img{
+        width: 40%;
+        top: 5vh;
+        position: relative;
+    }
+    
+    .msg{
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+        /*! gap: 23rem; */
+        display: flex;
+    }
+    
+    .global-main{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    
+    .pixelart img{
+        width: 10rem;
+    }
+    
+    .title-arquivo{
+        letter-spacing: 5%;
+        font-size: 3rem;
+    }
+   
+    .title-arquivo h2{
+        letter-spacing: 5%;
+    }
+
+    .explicacao{
+        font-size: 2rem;
+    }
+    
+    .container-arquivos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
